@@ -1,0 +1,22 @@
+[project]
+name = "langmod-manager"
+version = "1.0.0"
+description = "Load several War Thunder language mods at once, and keep them working through game updates"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.14"
+dependencies = ["PySide6>=6.9"]
+
+[project.scripts]
+langmod = "langmod.__main__:main"
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["langmod*"]
+
+[tool.setuptools.package-data]
+langmod = ["resources/*.ico", "resources/*.png", "resources/locale/*.json"]
