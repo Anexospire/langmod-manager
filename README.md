@@ -1,6 +1,6 @@
 # Langmod Manager
 
-Allows you to Run several War Thunder language mods at once and keep them working through game updates.
+Allows you to Run several War Thunder language mods at once and keep them up to date as well.
 
 **[Download the latest version](https://github.com/Anexospire/langmod-manager/releases/latest)**
 · Windows · free and open source
