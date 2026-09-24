@@ -1,22 +1,15 @@
 # Langmod Manager
 
-Run several War Thunder language mods at once (IFN1, the Localization Overhaul
-Project, WTHLM or any other) and keep them working through game updates.
+Allows you to Run several War Thunder language mods at once and keep them working through game updates.
 
 **[Download the latest version](https://github.com/Anexospire/langmod-manager/releases/latest)**
 · Windows · free and open source
 
-## Why
+## Reason
 
-A language mod is normally a `lang` folder pasted into the game. That means:
-
-- **one mod at a time**, because each mod's load list replaces the other's;
-- **names turning into string IDs** after a game update, until the mod's
-  author catches up;
-- **pasting it all in again** for every mod update, losing your own edits.
-
-Langmod Manager does the pasting for you, rebuilds the load list from the
-game's own every time, and puts everything back together after each update.
+Usually you would have to manually insert the Lang mod into a folder, and update it manually, the
+Lang Manager is intended to do that for you. It is created to help, and not for me to profit off
+of anybody.
 
 ## Getting started
 
@@ -26,35 +19,20 @@ game's own every time, and puts everything back together after each update.
 2. Open `Langmod Manager.exe`. There is nothing to install. If Windows says it
    "protected your PC", choose **More info**, then **Run anyway**: the program
    is not signed with a paid certificate.
-3. A short tour shows you round. Then add your mods: **Add → Get mods**
-   fetches IFN1, LOP or WTHLM in one click, or add any mod's zip, 7z or folder
-   just as it downloaded.
-4. Press **Play**. It puts your mods in if anything changed, then starts the
-   game.
+basically that's it.
 
 ## What it does
 
-- **Several mods at once**, in the order you choose. Where two mods change the
-  same name, the lower one in the list wins, or pick the one you want in the
-  Conflicts tab.
-- **Survives game updates.** New strings never show as their IDs, and the
-  game's own files are never changed, so an update cannot undo anything.
-- **Keeps your mods up to date** from where their authors publish them (WT Live
-  or GitHub), and keeps any edits you made to them.
-- **Optional modules**, such as IFN1's extra modules and WTHLM's packages, each
-  with an on/off switch.
-- **Already installed a mod by hand?** It is picked up by itself and keeps
-  working.
-- **Search any name** (Ctrl+F): see what the game says, what each mod says,
-  pick the one that shows, or type your own.
-- **Profiles** for different sets of mods, to switch in one click or send to a
-  friend.
-- **Works with Steam**: one line in War Thunder's launch options (Settings →
-  Shortcuts has it, ready to copy) brings your mods up to date whenever Steam
-  starts the game.
+- **keep multiple mods at once present**
+- **persist thru Game Updates**
+- **Keeps them up-to-date**
+- **Allows the Usage of Optional modules**
+- **Search any name (CTRL + F)**
+- **Profiles** for different sets of mods
+- **Works with Steam**
 - **Restore game** takes everything out again.
-- Ten themes, some of them animated, and six languages: English, Deutsch,
-  Français, Polski, Русский and 简体中文. It keeps itself up to date, too.
+- **and six languages:** English, Deutsch,
+  Français, Polski, Русский and 简体中文.
 
 ## Good to know
 
@@ -68,9 +46,7 @@ game's own every time, and puts everything back together after each update.
   helper needs on the clipboard, with no personal details, ready to paste into
   an [issue](https://github.com/Anexospire/langmod-manager/issues).
 
-## For mod authors
-
-Nothing needs to change. Mods work best when they:
+## Mods work best when they:
 
 - ship a `localization.blk` listing their own files in the order they load.
   The manager takes the game's entries from the game itself; to leave one of
@@ -82,7 +58,7 @@ Nothing needs to change. Mods work best when they:
   way they become switches;
 - ship changed strings only, not full copies of the game's tables.
 
-## More
+## Misc
 
 [How it works](docs/how-it-works.md): exactly what it writes into the game
 folder, how updates, picks and profiles work, the command line, and building it
@@ -91,5 +67,6 @@ from source.
 ## Licence
 
 Free software under the [MIT licence](LICENSE). The program is built with Qt
-and PySide6, used under the GNU LGPL version 3. Langmod Manager is not made by,
-endorsed by or connected with Gaijin Entertainment, the makers of War Thunder.
+and PySide6, used under the GNU LGPL version 3.
+this is fully open source, you can do what you wish with it.
+Also yes, this has been co-made with Claude to save time.
