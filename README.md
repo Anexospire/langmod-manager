@@ -24,7 +24,6 @@ basically that's it.
 ## What it does
 
 - **keep multiple mods at once present**
-- **persist thru Game Updates**
 - **Keeps them up-to-date**
 - **Allows the Usage of Optional modules**
 - **Search any name (CTRL + F)**
