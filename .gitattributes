@@ -1,0 +1,8 @@
+# Text is stored with LF and checked out as LF, whatever core.autocrlf says, except batch
+# files: cmd.exe misreads labels (call :makevenv) in a batch file without CRLF line ends.
+* text=auto eol=lf
+*.bat text eol=crlf
+*.png binary
+*.ico binary
+*.zip binary
+*.7z binary
